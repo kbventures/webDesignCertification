@@ -15,9 +15,21 @@ body {
       rgba(255, 0, 0, 0.45)
     ),
     /* your image */ url('/pictures/embossed-diamond.png');
+  max-width: 50rem;
+}
+
+/* Navigation */
+#navigation {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Chronology */
+#chronology {
+  font-size: 2rem;
+}
+
 #chronology ul li {
   list-style-type: none;
 }
