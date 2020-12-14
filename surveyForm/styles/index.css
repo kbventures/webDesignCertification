@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap');
+
+:root {
+  --color-main-background: #4b6c8b;
+  --color-border-bacground-image: #8d949d;
+  --color: rgba(22, 42, 37, 0.7);
+  --color-white: white;
+}
+
+body {
+  color: var(--color);
+  background-color: var(--color-white);
+}
+/* 
+
+
+
+#main-container {
+  background: url('/pic/italy-1587287_1280.jpg');
+  margin: 2rem;
+}
+
+#main {
+  background: var(--color);
+
+  max-width: 100rem;
+  margin: 2rem;
+  border: var(--color-border-bacground-image) 5px solid;
+} */
+
+/* #title h1 {
+}
+
+#description p {
+}
+
+#survey-form form {
+} */
+
+/* #form-group {
+  display: ;
+} */
+
+#main {
+  background-color: var(--color-main-background);
+  border-radius: 0.33 rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  max-width: 85rem;
+}
+
+/* #survey-form input[type='text'],
+#survey-form input[type='age'] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 1rem;
+  border-radius: 1rem;
+  border-color: blueviolet;
+} */
+/* 
+div {
+  border-radius: 0.33 rem;
+  padding: 1.5rem;
+} */

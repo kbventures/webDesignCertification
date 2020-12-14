@@ -1,0 +1,41 @@
+/* 
+Minimal CSS RESET
+https://www.google.com/search?q=how+to+make+comments+in+a+.css+file&oq=how+to+make+comments+in+a+.css+file&aqs=chrome..69i57j33i22i29i30l7.4124j0j7&sourceid=chrome&ie=UTF-8
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
