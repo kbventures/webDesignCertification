@@ -8,36 +8,109 @@
   background-repeat: repeat;
 } */
 
+/* 
+Colors extracted from picture: 50.6, 19.2, 12.5, 7.9, 3.7, 2.2, 1.1 $
+Respectively
+ */
+:root {
+  --grey-background: #727272;
+  --white-color: #f8f8f8;
+  --pink: #e9c5ad;
+  --light-grey: #c5c4c3;
+  --red: #cc2a2b;
+  --black: #362823;
+  --brown: #886a59;
+}
+
 body {
-  background-image: 
-      /* top, transparent red */ linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
-    ),
-    /* your image */ url('/pictures/embossed-diamond.png');
-  max-width: 50rem;
+  background: var(--light-grey);
+  font-size: 16px;
+}
+
+#main {
+  margin: auto;
+  max-width: 57rem;
+}
+
+.font-size-1rem {
+  font-size: 2rem;
 }
 
 /* Navigation */
 #navigation {
   font-size: 3rem;
-  display: flex;
+  display: block;
   justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* Chronology */
 #chronology {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 #chronology ul li {
   list-style-type: none;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
+.display-flex {
+  display: flex;
+}
+.margin-auto {
+  margin: auto;
+}
+
+.display-block {
+  display: block;
+}
+
+.container {
+  margin: 2rem 3.5rem;
+  padding: 1rem;
+  border: #eee 1rem solid;
+  box-shadow: 0.5rem 0.5rem 1rem var(--black);
+}
+
 /* Social Media Icon Links */
 
 #twitter {
   color: #00acee;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.testing a img {
+  display: block;
+  margin: auto;
+}
+
+li {
+  margin-bottom: 1.6rem;
+  padding: 0 3rem;
+}
+
+#social-links {
+  border: solid 0.25rem var(--grey-background);
+  text-align: center;
+  padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#social-links a {
+  padding-right: 1rem;
 }
 
 #instagram .fa-instagram {
