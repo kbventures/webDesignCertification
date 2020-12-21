@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/index2.css" />
+    <script
+      src="https://kit.fontawesome.com/242782084e.js"
+      crossorigin="anonymous"
+    ></script>
+    <scrip type="text/javascript" src="/js/index.js"></scrip>
+  </head>
+  <body>
+    <div id="container">
+        <header id="header">
+            <h1 id="title">KB Ventures Feedback Form</h1>
+            <p id="description">
+            Thank you for taking the time to help provide insight into the quality of
+            our github code
+            </p>
+        </header>
+    
+
+        <!-- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms-->
+  
+      <form action="/api/feedbackform">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name.." />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email.." />
+
+        <label for="age">Age</label>
+        <input type="number" min="0" for="age" name="age" placeholder="0" />
+
+        <p>Which option best describes your current role?</p>
+        <select id="role" name="role">
+          <option value="ceo">CEO</option>
+          <option value="manager">Manager</option>
+          <option value="it">IT</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend KBVentures services?</p>
+        <label>
+          <input
+            type="radio"
+            id="user-recommend"
+            name="user-recommend"
+            value="definitely"
+            checked
+          />
+          definitely
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="user-recommend"
+            name="user-recommend"
+            value="maybe"
+          />
+          Maybe
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="user-recommend"
+            name="user-recommend"
+            value="not sure"
+          />
+          Not sure
+        </label>
+        <label>
+          <input
+            type="radio"
+            id="user-recommend"
+            name="user-recommend"
+            value="no"
+          />
+          No
+        </label>
+
+        <p>Which project were you most interested in?</p>
+        <select id="interested" name="interested">
+          <option value="timestampmicroservice">
+            Time Stamp Micro Service
+          </option>
+          <option value="reactfronttoback">React Front To Back</option>
+          <option value="javascriptfundamentals">
+            Javascript Fundamentals
+          </option>
+        </select>
+
+        <p>
+          What would you like to see improved?
+          <span>(Check all that apply)</span>
+        </p>
+        <label>
+          <input type="checkbox" value="Documentation" />
+          Documentation
+        </label>
+        <label>
+          <input type="checkbox" value="Algorithms" />
+          Algorithms
+        </label>
+        <label></label>
+        <input type="checkbox" value="Datastructures" />
+        Data Structures
+        </label>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

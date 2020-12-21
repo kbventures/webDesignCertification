@@ -1,0 +1,57 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-dark-blue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+body {
+  margin: 0;
+  color: var(--color-white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-dark-blue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(/pic/italy-1587287_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  max-width: 40rem;
+  margin: auto;
+}
+
+#survey-form {
+  background-color: #1b1b32;
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (mind-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
