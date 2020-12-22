@@ -1,65 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --color-main-background: #4b6c8b;
-  --color-border-bacground-image: #8d949d;
-  --color: rgba(22, 42, 37, 0.7);
-  --color-white: white;
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-dark-blue-alpha: rgba(27, 27, 50, 0.75);
+  --color-green: #37af65;
 }
 
 body {
-  color: var(--color);
-  background-color: var(--color-white);
-}
-/* 
-
-
-
-#main-container {
-  background: url('/pic/italy-1587287_1280.jpg');
-  margin: 2rem;
+  margin: 0;
+  color: var(--color-white);
+  font-family: 'Roboto', sans-serif;
 }
 
-#main {
-  background: var(--color);
-
-  max-width: 100rem;
-  margin: 2rem;
-  border: var(--color-border-bacground-image) 5px solid;
-} */
-
-/* #title h1 {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-#description p {
-}
-
-#survey-form form {
-} */
-
-/* #form-group {
-  display: ;
-} */
-
-#main {
-  background-color: var(--color-main-background);
-  border-radius: 0.33 rem;
-  padding: 1.5rem;
-  margin: 2rem;
-  max-width: 85rem;
-}
-
-/* #survey-form input[type='text'],
-#survey-form input[type='age'] {
-  display: block;
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  padding: 0.5rem 0.75rem;
-  margin: 0.25rem 1rem;
-  border-radius: 1rem;
-  border-color: blueviolet;
-} */
-/* 
-div {
-  border-radius: 0.33 rem;
-  padding: 1.5rem;
-} */
+  z-index: -1;
+  background: var(--color-dark-blue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(/surveyForm/pic/italy-1587287_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title {
+  font-style: italic;
+  text-shadow: #1b1b32 0.25rem 0.25rem 0.3rem;
+  margin: 0.2rem;
+}
+
+#description {
+  font-style: italic;
+  text-shadow: #1b1b32 0.25rem 0.25rem 0.3rem;
+}
+
+#container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+header {
+  margin: 3rem 0rem 1.5rem 0rem;
+  padding: 0rem 1.5rem;
+}
+
+#survey-form {
+  background-color: var(--color-dark-blue-alpha);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 3rem 2.5rem;
+  text-shadow: #1b1b32 0.25rem 0.25rem 0.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  margin: 0 0 1.5rem 0;
+}
+
+.form-control {
+  width: 100%;
+
+  padding: 0.5rem;
+  border-radius: 0.33rem;
+  background-color: #fff;
+}
+
+.submit-button {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.7rem;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+}
+
+@media (mind-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
