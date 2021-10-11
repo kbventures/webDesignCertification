@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .hero-banner {
   content: '';
   position: fixed;
@@ -12,7 +14,7 @@
       $hero-banner-lg-color1,
       $hero-banner-lg-color2
     ),
-    url(/surveyForm/pic/italy-1587287_1280.jpg);
+    url('../pic/italy-1587287_1280.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

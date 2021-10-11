@@ -1,4 +1,7 @@
-// BASIC CSS RESETm
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+// BASIC CSS RESET
 *,
 *::after,
 *::before {

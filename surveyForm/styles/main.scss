@@ -1,10 +1,23 @@
-@import 'abstracts/variables', 'abstracts/mixins';
+@use 'abstracts/variables' as *;
 
-@import 'base/base', 'base/reset', 'base/typography', 'base/utilities';
+@use 'abstracts/mixins' as *;
 
-@import 'components/submit-button', 'components/form', 'components/header',
-  'components/hero-banner';
+@use 'base/base' as *;
 
-@import 'layout/container';
+@use 'base/reset' as *;
 
-@import 'vendors/googlefonts';
+@use 'base/typography' as *;
+
+@use 'base/utilities' as *;
+
+@use 'components/submit-button' as *;
+
+@use 'components/form' as *;
+
+@use 'components/header' as *;
+
+@use 'components/hero-banner' as *;
+
+@use 'layout/container' as *;
+
+@use 'vendors/googlefonts' as *;
